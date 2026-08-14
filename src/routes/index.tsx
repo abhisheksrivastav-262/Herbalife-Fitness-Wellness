@@ -342,42 +342,6 @@ function Index() {
         <section className="py-20 sm:py-28 bg-background">
           <div className="container-page">
             <Reveal>
-              <div className="mx-auto max-w-3xl text-center flex flex-col items-center mb-12">
-                <SectionLabel>Watch Our Latest Videos</SectionLabel>
-                <h2 className="mt-5 text-2xl font-bold sm:text-3xl leading-snug">
-                  Get inspired with our latest fitness, nutrition and wellness content.
-                </h2>
-              </div>
-            </Reveal>
-
-            <div className="grid gap-8 md:grid-cols-2 max-w-2xl mx-auto mb-20 px-4 sm:px-8">
-              <Reveal delay={100}>
-                <div className="relative aspect-[9/16] w-full max-w-[340px] mx-auto overflow-hidden rounded-[1.5rem] shadow-[var(--shadow-soft)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] bg-card border border-border">
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/VhM4JI1OmvE"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </Reveal>
-              <Reveal delay={200}>
-                <div className="relative aspect-[9/16] w-full max-w-[340px] mx-auto overflow-hidden rounded-[1.5rem] shadow-[var(--shadow-soft)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] bg-card border border-border">
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/goxSIvPriYY"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </Reveal>
-            </div>
-
-            <Reveal delay={300}>
               <div className="mx-auto max-w-3xl text-center flex flex-col items-center">
                 <SectionLabel>Follow Our Fitness &amp; Wellness Journey</SectionLabel>
                 <h2 className="mt-5 text-2xl font-bold sm:text-3xl leading-snug">
