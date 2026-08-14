@@ -28,13 +28,13 @@ import wellnessImg from "@/assets/wellness.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Herbalife Patiala | Fitness, Nutrition & Wellness Coaching" },
+      { title: "Jasbir Health Expert | Fitness, Nutrition & Wellness Coaching" },
       {
         name: "description",
         content:
           "Personalized nutrition, weight management and fitness guidance in Patiala, Punjab. Start your wellness journey today — call or WhatsApp 9478680365.",
       },
-      { property: "og:title", content: "Herbalife Patiala | Fitness & Wellness" },
+      { property: "og:title", content: "Jasbir Health Expert | Fitness & Wellness" },
       {
         property: "og:description",
         content:
@@ -91,7 +91,7 @@ function Index() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const text = `Hello Herbalife Patiala!%0A%0AName: ${encodeURIComponent(
+    const text = `Hello Jasbir Health Expert!%0A%0AName: ${encodeURIComponent(
       form.name,
     )}%0APhone: ${encodeURIComponent(form.phone)}%0AMessage: ${encodeURIComponent(form.message)}`;
     window.open(`${WHATSAPP}?text=${text}`, "_blank", "noopener");
@@ -370,7 +370,7 @@ function Index() {
 
                 <div className="mt-8 grid gap-3">
                   {[
-                    { icon: HeartPulse, label: "Herbalife", value: "Fitness & Wellness" },
+                    { icon: HeartPulse, label: "Business", value: "Jasbir Health Expert" },
                     { icon: Phone, label: "Phone / WhatsApp", value: PHONE, href: TEL },
                     { icon: MapPin, label: "Location", value: "Patiala, Punjab" },
                     { icon: Instagram, label: "Instagram", value: "@jasbir709", href: "https://www.instagram.com/jasbir709?igsh=NGN2bWRpbDNneDk0" },
@@ -465,7 +465,7 @@ function Index() {
       <footer className="border-t border-border bg-background py-14">
         <div className="container-page grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-display text-lg font-bold">Herbalife</p>
+            <p className="font-display text-lg font-bold">Jasbir Health Expert</p>
             <p className="mt-1 text-sm text-muted-foreground">Fitness &amp; Wellness</p>
             <p className="mt-4 text-sm text-muted-foreground">Patiala, Punjab</p>
             <a href={TEL} className="mt-1 block text-sm font-semibold text-primary-dark">
@@ -533,7 +533,7 @@ function Index() {
         </div>
         <div className="container-page mt-10 border-t border-border pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            © 2026 Herbalife Fitness &amp; Wellness. All Rights Reserved.
+            © 2026 Jasbir Health Expert. All Rights Reserved.
           </p>
         </div>
       </footer>

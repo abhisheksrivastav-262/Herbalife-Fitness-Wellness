@@ -37,7 +37,7 @@ export function Header() {
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-lg font-bold leading-tight">
-              Herbalife
+              Jasbir Health Expert
             </span>
             <span className="block truncate text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground">
               Fitness &amp; Wellness
