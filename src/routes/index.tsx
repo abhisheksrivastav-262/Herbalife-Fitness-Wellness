@@ -50,28 +50,22 @@ const TEL = "tel:+919478680365";
 
 const services = [
   {
-    title: "Weight Management",
-    text: "Support your journey toward healthier lifestyle habits.",
+    title: "Weight Loss",
+    text: "Personalized guidance to help you shed weight in a healthy, sustainable way.",
     img: weightImg,
     icon: Sparkles,
   },
   {
-    title: "Nutrition Support",
-    text: "Build better nutrition habits with personalized guidance.",
+    title: "Weight Gain",
+    text: "Build muscle and reach a healthier weight with the right nutrition.",
     img: nutritionImg,
     icon: Apple,
   },
   {
-    title: "Fitness Lifestyle",
-    text: "Stay active, motivated and consistent.",
+    title: "Fitness & Wellness",
+    text: "Stay active, energized, and consistent to build a healthier everyday life.",
     img: fitnessImg,
     icon: Dumbbell,
-  },
-  {
-    title: "Wellness",
-    text: "Focus on overall health, energy and everyday wellbeing.",
-    img: wellnessImg,
-    icon: HeartPulse,
   },
 ];
 
@@ -125,26 +119,25 @@ function Index() {
             <div className="max-w-2xl text-primary-foreground">
               <Reveal>
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] backdrop-blur-sm">
-                  <MapPin className="h-3.5 w-3.5" /> Fitness &amp; Wellness • Patiala, Punjab
+                  WEIGHT LOSS • WEIGHT GAIN • FITNESS
                 </span>
               </Reveal>
               <Reveal delay={100}>
                 <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
-                  Transform Your Health.
+                  Transform Your Body.
                   <br />
-                  <span className="text-accent">Transform Your Life.</span>
+                  <span className="text-accent">Improve Your Lifestyle.</span>
                 </h1>
               </Reveal>
               <Reveal delay={200}>
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-                  Start your fitness and wellness journey with personalized nutrition guidance and a
-                  healthier lifestyle.
+                  Personalized fitness and nutrition guidance to help you work toward your health and wellness goals.
                 </p>
               </Reveal>
               <Reveal delay={300}>
                 <div className="mt-9 flex flex-wrap gap-3">
                   <a href="#contact" className="btn-base btn-primary">
-                    Get Started
+                    Start Your Fitness Journey
                   </a>
                   <a
                     href={WHATSAPP}
@@ -162,6 +155,12 @@ function Index() {
                   >
                     <Youtube className="h-4 w-4" /> YouTube Channel
                   </a>
+                </div>
+              </Reveal>
+              <Reveal delay={400}>
+                <div className="mt-8 flex items-center gap-2 text-sm text-primary-foreground/80 font-medium">
+                  <MapPin className="h-4 w-4" />
+                  <span>Weight Loss • Weight Gain • Fitness &amp; Wellness | Patiala, Punjab</span>
                 </div>
               </Reveal>
             </div>
@@ -189,17 +188,13 @@ function Index() {
               <Reveal>
                 <SectionLabel>About Us</SectionLabel>
                 <h2 className="mt-5 text-3xl font-bold leading-tight sm:text-4xl">
-                  Your Journey to Better Health Starts Here
+                  Your Fitness. Your Health. Your Transformation.
                 </h2>
                 <p className="mt-5 leading-relaxed text-muted-foreground">
-                  We help people across Patiala improve their fitness, nutrition and overall
-                  wellness through personalized guidance. Every plan starts with understanding your
-                  routine, your goals and your daily habits — then building something realistic
-                  around them.
+                  Fitness is not just about looking good — it’s about feeling stronger, healthier, and more confident every day. With the right nutrition, consistent fitness habits, and proper guidance, you can take a meaningful step toward your wellness goals.
                 </p>
-                <p className="mt-4 leading-relaxed text-muted-foreground">
-                  From balanced nutrition to staying active and consistent, our approach is simple,
-                  sustainable and built for the long run — with one-to-one support at every step.
+                <p className="mt-4 leading-relaxed font-semibold text-primary-dark">
+                  Start Today • Stay Consistent • See the Difference
                 </p>
               </Reveal>
 
@@ -227,16 +222,16 @@ function Index() {
         <section id="services" className="bg-secondary/60 py-20 sm:py-28">
           <div className="container-page">
             <Reveal>
-              <div className="mx-auto max-w-2xl text-center">
+              <div className="mx-auto max-w-3xl text-center">
                 <SectionLabel>What We Do</SectionLabel>
-                <h2 className="mt-5 text-3xl font-bold sm:text-4xl">Fitness &amp; Wellness</h2>
-                <p className="mt-4 text-muted-foreground">
-                  Focused support across the areas that matter most to a healthier everyday life.
+                <h2 className="mt-5 text-3xl font-bold sm:text-4xl">Weight Loss | Weight Gain | Fitness</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Personalized guidance for a healthier, stronger and more confident you.
                 </p>
               </div>
             </Reveal>
 
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((s, i) => (
                 <Reveal key={s.title} delay={i * 90}>
                   <article className="card-soft group h-full overflow-hidden">
