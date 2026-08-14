@@ -12,6 +12,7 @@ import {
   Sparkles,
   UserRound,
   Instagram,
+  Youtube,
 } from "lucide-react";
 
 import { Header, WHATSAPP } from "@/components/site/Header";
@@ -152,6 +153,14 @@ function Index() {
                     className="btn-base border border-primary-foreground/40 bg-primary-foreground/10 text-primary-foreground backdrop-blur-sm transition-colors hover:bg-primary-foreground/20"
                   >
                     <MessageCircle className="h-4 w-4" /> WhatsApp Us
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@JasbirKaur-b4g"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-base border border-[#FF0000]/50 bg-[#FF0000]/80 text-white backdrop-blur-sm transition-colors hover:bg-[#FF0000]"
+                  >
+                    <Youtube className="h-4 w-4" /> YouTube Channel
                   </a>
                 </div>
               </Reveal>
@@ -329,6 +338,66 @@ function Index() {
           </div>
         </section>
 
+        {/* YouTube Video Showcase & Social Media Section */}
+        <section className="py-20 sm:py-28 bg-background">
+          <div className="container-page">
+            <Reveal>
+              <div className="mx-auto max-w-3xl text-center flex flex-col items-center mb-12">
+                <SectionLabel>Watch Our Latest Videos</SectionLabel>
+                <h2 className="mt-5 text-2xl font-bold sm:text-3xl leading-snug">
+                  Get inspired with our latest fitness, nutrition and wellness content.
+                </h2>
+              </div>
+            </Reveal>
+
+            <div className="grid gap-8 md:grid-cols-2 max-w-2xl mx-auto mb-20 px-4 sm:px-8">
+              <Reveal delay={100}>
+                <div className="relative aspect-[9/16] w-full max-w-[340px] mx-auto overflow-hidden rounded-[1.5rem] shadow-[var(--shadow-soft)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] bg-card border border-border">
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/VhM4JI1OmvE"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </Reveal>
+              <Reveal delay={200}>
+                <div className="relative aspect-[9/16] w-full max-w-[340px] mx-auto overflow-hidden rounded-[1.5rem] shadow-[var(--shadow-soft)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] bg-card border border-border">
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/goxSIvPriYY"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </Reveal>
+            </div>
+
+            <Reveal delay={300}>
+              <div className="mx-auto max-w-3xl text-center flex flex-col items-center">
+                <SectionLabel>Follow Our Fitness &amp; Wellness Journey</SectionLabel>
+                <h2 className="mt-5 text-2xl font-bold sm:text-3xl leading-snug">
+                  Watch our latest fitness, nutrition and wellness videos on YouTube.
+                </h2>
+                <div className="mt-9">
+                  <a
+                    href="https://www.youtube.com/@JasbirKaur-b4g"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-base bg-[#FF0000] text-white hover:bg-[#FF0000]/90 transition-colors shadow-[var(--shadow-soft)] px-8 py-3 text-base"
+                  >
+                    <Youtube className="h-5 w-5 mr-1" /> Visit Our YouTube Channel
+                  </a>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* Contact */}
         <section id="contact" className="bg-secondary/60 py-20 sm:py-28">
           <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -346,6 +415,7 @@ function Index() {
                     { icon: Phone, label: "Phone / WhatsApp", value: PHONE, href: TEL },
                     { icon: MapPin, label: "Location", value: "Patiala, Punjab" },
                     { icon: Instagram, label: "Instagram", value: "@jasbir709", href: "https://www.instagram.com/jasbir709?igsh=NGN2bWRpbDNneDk0" },
+                    { icon: Youtube, label: "YouTube", value: "Jasbir Kaur", href: "https://www.youtube.com/@JasbirKaur-b4g" },
                   ].map((c) => (
                     <div key={c.label} className="card-soft flex items-center gap-4 p-5">
                       <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary-soft text-primary-dark">
@@ -490,6 +560,14 @@ function Index() {
                 className="btn-base border border-border bg-card text-primary-dark shadow-[var(--shadow-soft)] hover:bg-primary-soft/60"
               >
                 <Instagram className="h-4 w-4" /> Instagram
+              </a>
+              <a
+                href="https://www.youtube.com/@JasbirKaur-b4g"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-base border border-border bg-card text-[#FF0000] shadow-[var(--shadow-soft)] hover:bg-[#FF0000]/10"
+              >
+                <Youtube className="h-4 w-4" /> YouTube
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Leaf, Menu, X, MessageCircle } from "lucide-react";
+import { Leaf, Menu, X, MessageCircle, Youtube } from "lucide-react";
 
 const NAV = [
   { label: "Home", href: "#home" },
@@ -55,6 +55,15 @@ export function Header() {
               {item.label}
             </a>
           ))}
+          <a
+            href="https://www.youtube.com/@JasbirKaur-b4g"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center h-10 w-10 rounded-full border border-border text-foreground/80 hover:text-[#FF0000] hover:border-[#FF0000]/30 hover:bg-[#FF0000]/5 transition-colors"
+            aria-label="YouTube Channel"
+          >
+            <Youtube className="h-5 w-5" />
+          </a>
           <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn-base btn-primary">
             <MessageCircle className="h-4 w-4" /> Get Started
           </a>
@@ -85,15 +94,26 @@ export function Header() {
                   {item.label}
                 </a>
               ))}
-              <a
-                href={WHATSAPP}
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setOpen(false)}
-                className="btn-base btn-primary mt-2"
-              >
-                <MessageCircle className="h-4 w-4" /> Get Started
-              </a>
+              <div className="flex gap-2 mt-2">
+                <a
+                  href="https://www.youtube.com/@JasbirKaur-b4g"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="btn-base flex-1 justify-center border border-border bg-card text-[#FF0000] hover:bg-[#FF0000]/5"
+                >
+                  <Youtube className="h-4 w-4" /> YouTube
+                </a>
+                <a
+                  href={WHATSAPP}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="btn-base flex-[2] justify-center btn-primary"
+                >
+                  <MessageCircle className="h-4 w-4" /> Get Started
+                </a>
+              </div>
             </div>
           </div>
         </div>
