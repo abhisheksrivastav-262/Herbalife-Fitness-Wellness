@@ -11,6 +11,7 @@ import {
   Send,
   Sparkles,
   UserRound,
+  Instagram,
 } from "lucide-react";
 
 import { Header, WHATSAPP } from "@/components/site/Header";
@@ -344,6 +345,7 @@ function Index() {
                     { icon: HeartPulse, label: "Herbalife", value: "Fitness & Wellness" },
                     { icon: Phone, label: "Phone / WhatsApp", value: PHONE, href: TEL },
                     { icon: MapPin, label: "Location", value: "Patiala, Punjab" },
+                    { icon: Instagram, label: "Instagram", value: "@jasbir709", href: "https://www.instagram.com/jasbir709?igsh=NGN2bWRpbDNneDk0" },
                   ].map((c) => (
                     <div key={c.label} className="card-soft flex items-center gap-4 p-5">
                       <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary-soft text-primary-dark">
@@ -472,14 +474,24 @@ function Index() {
             <p className="mt-4 text-sm text-muted-foreground">
               Message us anytime for guidance and enquiries.
             </p>
-            <a
-              href={WHATSAPP}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-base btn-primary mt-4"
-            >
-              <MessageCircle className="h-4 w-4" /> WhatsApp
-            </a>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-base btn-primary"
+              >
+                <MessageCircle className="h-4 w-4" /> WhatsApp
+              </a>
+              <a
+                href="https://www.instagram.com/jasbir709?igsh=NGN2bWRpbDNneDk0"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-base border border-border bg-card text-primary-dark shadow-[var(--shadow-soft)] hover:bg-primary-soft/60"
+              >
+                <Instagram className="h-4 w-4" /> Instagram
+              </a>
+            </div>
           </div>
         </div>
         <div className="container-page mt-10 border-t border-border pt-6">
